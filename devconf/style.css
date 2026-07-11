@@ -1,0 +1,188 @@
+/* ========== Reset ========== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #ffffff;
+}
+
+/* ========== Navbar ========== */
+
+.navbar {
+    width: 90%;
+    max-width: 1551px;
+    height: 98px;
+    margin: auto;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #FFFFFF;
+}
+
+/* ========== Left ========== */
+
+.nav-left {
+    margin-left: 60px;
+}
+
+.logo {
+    width: 45px;
+    height: 45px;
+    object-fit: cover;
+}
+
+.nav-left h2 {
+    font-size: 24px;
+    color: #222;
+}
+
+/* ========== Middle ========== */
+
+.nav-menu {
+    display: flex;
+    list-style: none;
+    gap: 35px;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+    font-weight: 500;
+    color: #575757;
+}
+
+.nav-menu a:hover {
+    color: #4f46e5;
+}
+
+/* ========== Right ========== */
+
+.register-btn {
+    display: inline-block;
+    text-decoration: none;
+    background: #1D4ED8;
+    color: #FFFFFF;
+    padding: 12px;
+    border-radius: 12px;
+    font-weight: 700;
+    font-display: block;
+    width: 188px;
+    height: 48px;
+    border: none;
+    margin-right: 60px;
+}
+
+.register-btn:hover {
+    background: #372fc4;
+}
+
+/* ===========================
+   Hero Section
+=========================== */
+
+.hero{
+
+    width:100%;
+    height:786px;
+
+    background-image:
+    linear-gradient(rgba(0,0,0,.60), rgba(0,0,0,.60)),
+    url("images/banner.jpg");
+
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+/* Main Container */
+
+.hero-content{
+
+    width:70%;
+    max-width:900px;
+    height:80%;
+
+    display:flex;
+    flex-direction:column;
+
+    justify-content:center;
+    align-items:center;
+
+    gap:180px;
+
+    text-align:center;
+}
+
+/* Top Container */
+
+.hero-text{
+
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:25px;
+}
+
+.hero-text h1{
+
+    color:#fff;
+
+    font-size:72px;
+
+    font-weight:700;
+
+    line-height:1.2;
+}
+
+.hero-text span{
+
+    font-style:italic;
+}
+
+.hero-text p{
+
+    color:#f1f1f1;
+
+    font-size:20px;
+
+    line-height:1.8;
+
+    max-width:750px;
+}
+
+/* Bottom Container */
+
+.hero-btn a{
+
+    text-decoration:none;
+
+    color:#fff;
+
+    background:#2563eb;
+
+    padding:18px 45px;
+
+    border-radius:10px;
+
+    font-size:20px;
+
+    font-weight:600;
+
+    transition:.3s;
+}
+
+.hero-btn a:hover{
+
+    background:#1d4ed8;
+}
