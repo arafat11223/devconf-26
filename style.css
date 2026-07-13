@@ -1,5 +1,4 @@
 /* ========== Reset ========== */
-
 * {
     margin: 0;
     padding: 0;
@@ -12,13 +11,11 @@ body {
 }
 
 /* ========== Navbar ========== */
-
 .navbar {
     width: 90%;
     max-width: 1551px;
     height: 98px;
     margin: auto;
-
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -26,7 +23,6 @@ body {
 }
 
 /* ========== Left ========== */
-
 .nav-left {
     margin-left: 60px;
 }
@@ -43,7 +39,6 @@ body {
 }
 
 /* ========== Middle ========== */
-
 .nav-menu {
     display: flex;
     list-style: none;
@@ -52,10 +47,9 @@ body {
 
 .nav-menu a {
     text-decoration: none;
-    color: #333;
+    color: #575757;
     font-size: 16px;
     font-weight: 500;
-    color: #575757;
 }
 
 .nav-menu a:hover {
@@ -63,7 +57,6 @@ body {
 }
 
 /* ========== Right ========== */
-
 .register-btn {
     display: inline-block;
     text-decoration: none;
@@ -84,105 +77,385 @@ body {
 }
 
 /* ===========================
-   Hero Section
+   Responsive Navbar
 =========================== */
+@media (max-width: 768px) {
+    .navbar {
+        width: 95%;
+        height: 80px;
+    }
 
-.hero{
+    .nav-left {
+        margin-left: 20px;
+    }
 
-    width:100%;
-    height:786px;
+    .nav-right {
+        margin-right: 20px;
+    }
 
+    .nav-menu {
+        gap: 20px;
+    }
+
+    .nav-menu a {
+        font-size: 14px;
+    }
+
+    .register-btn {
+        width: 150px;
+        height: 42px;
+        font-size: 14px;
+        margin-right: 0;
+    }
+
+    .nav-left img {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+/* ========== Hero Section ========== */
+.hero {
+    width: 100%;
+    height: 786px;
     background-image:
-    linear-gradient(rgba(0,0,0,.60), rgba(0,0,0,.60)),
-    url("images/banner.jpg");
-
-    background-size:cover;
-    background-position:center;
-    background-repeat:no-repeat;
-
-    display:flex;
-    justify-content:center;
-    align-items:center;
+        linear-gradient(rgba(0, 0, 0, .60), rgba(0, 0, 0, .60)),
+        url("images/banner.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /* Main Container */
-
-.hero-content{
-
-    width:70%;
-    max-width:900px;
-    height:80%;
-
-    display:flex;
-    flex-direction:column;
-
-    justify-content:center;
-    align-items:center;
-
-    gap:180px;
-
-    text-align:center;
+.hero-content {
+    width: 70%;
+    max-width: 900px;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 180px;
+    text-align: center;
 }
 
 /* Top Container */
-
-.hero-text{
-
-    display:flex;
-    flex-direction:column;
-    align-items:center;
-    gap:25px;
+.hero-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
 }
 
-.hero-text h1{
-
-    color:#fff;
-
-    font-size:72px;
-
-    font-weight:700;
-
-    line-height:1.2;
+.hero-text h1 {
+    color: #ffffff;
+    font-size: 80px;
+    font-weight: 700;
+    line-height: 1.2;
 }
 
-.hero-text span{
-
-    font-style:italic;
+.hero-text span {
+    font-style: italic;
 }
 
-.hero-text p{
-
-    color:#f1f1f1;
-
-    font-size:20px;
-
-    line-height:1.8;
-
-    max-width:750px;
+.hero-text p {
+    color: #f1f1f1;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 1.8;
+    max-width: 750px;
 }
 
 /* Bottom Container */
-
-.hero-btn a{
-
-    text-decoration:none;
-
-    color:#fff;
-
-    background:#2563eb;
-
-    padding:18px 45px;
-
-    border-radius:10px;
-
-    font-size:20px;
-
-    font-weight:600;
-
-    transition:.3s;
+.hero-btn {
+    text-decoration: none;
+    color: #fff;
+    background: #2563eb;
+    padding: 18px 45px;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: 600;
+    transition: .3s;
 }
 
-.hero-btn a:hover{
-
-    background:#1d4ed8;
+.hero-btn:hover {
+    background: #1d4ed8;
 }
+
+/* ========== Speakers Section ========== */
+.speakers {
+    width: 90%;
+    max-width: 1200px;
+    margin: 80px auto;
+}
+
+/* Heading */
+.section-title {
+    text-align: center;
+    font-size: 42px;
+    font-weight: 700;
+    margin-bottom: 50px;
+}
+
+/* Grid Container */
+.speaker-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+/* Card */
+.card {
+    background: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, .08);
+    transition: .3s;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, .15);
+}
+
+/* Image */
+.card img {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    display: block;
+}
+
+/* Content */
+.card-content {
+    padding: 20px;
+}
+
+/* Category */
+.category {
+    display: inline-block;
+    color: #2d63ff;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+/* Name */
+.card-content h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #222;
+}
+
+/* Designation */
+.card-content p {
+    color: #777;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .speaker-container {
+        grid-template-columns: 1fr;
+    }
+
+    .section-title {
+        font-size: 32px;
+    }
+}
+
+/* ==========================
+   Pricing Section
+========================== */
+.pricing {
+    width: 90%;
+    max-width: 1200px;
+    margin: 100px auto;
+}
+
+/* Heading */
+.section-title {
+    text-align: center;
+    font-size: 42px;
+    font-weight: 700;
+    color: #111827;
+    margin-bottom: 10px;
+}
+
+.section-subtitle {
+    text-align: center;
+    color: #6b7280;
+    margin-bottom: 60px;
+}
+
+/* Pricing Container */
+.pricing-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+/* Card */
+.pricing-card {
+    flex: 1;
+    min-width: 300px;
+    max-width: 360px;
+    background: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    padding: 25px;
+    transition: .3s;
+}
+
+/* Hover */
+.pricing-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, .12);
+}
+
+/* Featured Card */
+.featured {
+    background: #0f172a;
+    color: #ffffff;
+    transform: scale(1.05);
+}
+
+/* Plan Label */
+.plan {
+    font-size: 12px;
+    font-weight: 700;
+    color: #3b82f6;
+    letter-spacing: 1px;
+}
+
+/* Price */
+.pricing-card h3 {
+    font-size: 48px;
+    margin: 12px 0 5px;
+}
+
+.price-text {
+    color: #6b7280;
+    margin-bottom: 20px;
+}
+
+.featured .price-text {
+    color: #cbd5e1;
+}
+
+/* Line */
+hr {
+    border: none;
+    border-top: 1px solid #e5e7eb;
+    margin: 20px 0;
+}
+
+.featured hr {
+    border-top: 1px solid rgba(255, 255, 255, .15);
+}
+
+/* List */
+ul {
+    list-style: disc;
+    padding-left: 20px;
+    margin-bottom: 30px;
+}
+
+li {
+    margin-bottom: 12px;
+    line-height: 1.6;
+    font-size: 15px;
+}
+
+/* Button */
+button {
+    width: 100%;
+    padding: 14px;
+    border-radius: 8px;
+    border: 1px solid #2563eb;
+    background: #ffffff;
+    color: #2563eb;
+    font-weight: 600;
+    cursor: pointer;
+    transition: .3s;
+}
+
+button:hover {
+    background: #2563eb;
+    color: #ffffff;
+}
+
+/* Featured Button */
+.featured button {
+    background: #2563eb;
+    color: #ffffff;
+    border: none;
+}
+
+.featured button:hover {
+    background: #1d4ed8;
+}
+
+/*=========================
+      Newsletter Section
+=========================*/
+.newsletter {
+    width: 90%;
+    max-width: 1200px;
+    margin: 100px auto;
+    background: #111827;
+    color: white;
+    border-radius: 20px;
+    padding: 70px 40px;
+    text-align: center;
+}
+
+.newsletter h2 {
+    font-size: 42px;
+    margin-bottom: 15px;
+}
+
+.newsletter p {
+    color: #cbd5e1;
+    max-width: 650px;
+    margin: 0 auto 40px;
+    line-height: 1.7;
+}
+
+.newsletter-form {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.newsletter-form input {
+    width: 350px;
+    padding: 16px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    outline: none;
+}
+
+.newsletter-form button {
+    padding: 16px 30px;
+    background: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.newsletter-form button:hover {
+    background: #1d4ed8;
+}
+
