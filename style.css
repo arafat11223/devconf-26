@@ -351,8 +351,6 @@ body {
 .featured .price-text {
     color: #cbd5e1;
 }
-
-/* Line */
 hr {
     border: none;
     border-top: 1px solid #e5e7eb;
@@ -405,9 +403,7 @@ button:hover {
     background: #1d4ed8;
 }
 
-/*=========================
-      Newsletter Section
-=========================*/
+/* newsletter section */
 .newsletter {
     width: 90%;
     max-width: 1200px;
@@ -460,4 +456,107 @@ button:hover {
 
 .newsletter-form button:hover {
     background: #1d4ed8;
+}
+
+/* footer */
+.footer {
+    background: #5aa6dc;
+    color: #ffffff;
+    padding: 60px 8% 25px;
+    margin-top: 100px;
+}
+
+/* Container */
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+/* Logo */
+.footer-logo h2 {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.footer-logo span {
+    color: #3b82f6;
+}
+
+.footer-logo p {
+    color: #9ca3af;
+    font-size: 15px;
+}
+
+/* Navigation */
+.footer-links {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.footer-links a {
+    color: #040505;
+    text-decoration: none;
+    font-size: 16px;
+    transition: .3s;
+}
+
+.footer-links a:hover {
+    color: #3b82f6;
+}
+
+/* Social Icons */
+.footer-social {
+    display: flex;
+    gap: 15px;
+}
+
+.footer-social a {
+    width: 45px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #1f2937;
+    color: white;
+    border-radius: 50%;
+    text-decoration: none;
+    font-size: 18px;
+    transition: .3s;
+}
+
+.footer-social a:hover {
+    background: #2563eb;
+    transform: translateY(-6px);
+}
+
+/* Divider */
+.footer hr {
+    border: none;
+    border-top: 1px solid #374151;
+    margin: 40px 0 20px;
+}
+
+/* Bottom */
+.footer-bottom {
+    text-align: center;
+}
+
+.footer-bottom p {
+    color: #0c0c0d;
+    font-size: 15px;
+}
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-links {
+        justify-content: center;
+    }
 }
